@@ -42,3 +42,4 @@ cp -rf %{SOURCE1} %{buildroot}/etc/httpd/conf.d/%{sname}.conf
 %doc README.md
 
 %changelog
+# REMOVEME: error caused by commit 

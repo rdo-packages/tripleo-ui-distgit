@@ -4,10 +4,12 @@
 %global checkout .%{shortcommit}git
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{?dlrn: %global tarsources %{sname}-%{upstream_version}}
+%{!?dlrn: %global tarsources package}
 
 Name:           openstack-%{sname}
-Version:        XXX
-Release:        XXX
+Version:        1.0.3
+Release:        1%{?dist}
 Summary:        TripleO UI --- GUI for the TripleO project
 License:        ASL 2.0
 URL:            http://tripleo.org
@@ -23,7 +25,7 @@ BuildArch:      noarch
 %description
 
 %prep
-%autosetup -n %{name}-%{upstream_version} -S git
+%autosetup -n %{tarsources} -S git
 
 %build
 rm -rf node_modules
@@ -44,3 +46,6 @@ cp -rf %{SOURCE1} %{buildroot}/etc/httpd/conf.d/%{name}.conf
 %doc README.md
 
 %changelog
+* Thu Sep 29 2016 Haikel Guemar <hguemar@fedoraproject.org> 1.0.3-1
+- Update to 1.0.3
+

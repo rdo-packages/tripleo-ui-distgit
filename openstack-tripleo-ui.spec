@@ -1,21 +1,23 @@
-%global sname openstack-tripleo-ui
+%global sname tripleo-ui
 %global commit 38664a13b4a74f9bcca3384f6ad4184a298db140
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 %global checkout .%{shortcommit}git
 
-Name:           %{sname}
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+
+Name:           openstack-%{sname}
 Version:        XXX
 Release:        XXX
 Summary:        TripleO UI --- GUI for the TripleO project
 License:        ASL 2.0
 URL:            http://tripleo.org
 # Source0 is created by running "npm pack"
-Source0:        http://tarballs.openstack.org/tripleo-ui/tripleo-ui-%{shortcommit}.tar.gz
+Source0:        http://tarballs.openstack.org/tripleo-ui/tripleo-ui-%{upstream_version}.tar.gz
 Source1:        tripleo-ui.conf
 
 BuildRequires:  nodejs
 BuildRequires:  git
-BuildRequires:  %{sname}-deps = 2
+BuildRequires:  %{name}-deps >= 2
 BuildArch:      noarch
 
 %description
@@ -33,11 +35,11 @@ mkdir -p %{buildroot}/%{_datadir}/%{name}
 mkdir -p %{buildroot}/var/www/%{name}
 mkdir -p %{buildroot}/etc/httpd/conf.d/
 cp -rf dist %{buildroot}/var/www/%{name}/
-cp -rf %{SOURCE1} %{buildroot}/etc/httpd/conf.d/%{sname}.conf
+cp -rf %{SOURCE1} %{buildroot}/etc/httpd/conf.d/%{name}.conf
 
 %files
-%{_localstatedir}/www/%{sname}
-%config(noreplace)  %{_sysconfdir}/httpd/conf.d/%{sname}.conf
+%{_localstatedir}/www/%{name}
+%config(noreplace)  %{_sysconfdir}/httpd/conf.d/%{name}.conf
 %license LICENSE
 %doc README.md
 

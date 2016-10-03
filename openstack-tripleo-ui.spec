@@ -4,7 +4,7 @@
 %global checkout .%{shortcommit}git
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
-%{?dlrn: %global tarsources %{sname}-%{upstream_version}}
+%{?dlrn: %global tarsources %{name}-%{upstream_version}}
 %{!?dlrn: %global tarsources package}
 
 Name:           openstack-%{sname}

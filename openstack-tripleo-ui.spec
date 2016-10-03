@@ -49,3 +49,4 @@ cp -rf %{SOURCE1} %{buildroot}/etc/httpd/conf.d/%{name}.conf
 * Thu Sep 29 2016 Haikel Guemar <hguemar@fedoraproject.org> 1.0.3-1
 - Update to 1.0.3
 
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/tripleo-ui/commit/?id=f7297c3e55a856044e1182c3be5f0caf43eae650

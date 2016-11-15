@@ -8,7 +8,7 @@
 %{!?dlrn: %global tarsources package}
 
 Name:           openstack-%{sname}
-Version:        1.0.4
+Version:        1.0.5
 Release:        1%{?dist}
 Summary:        TripleO UI --- GUI for the TripleO project
 License:        ASL 2.0
@@ -46,6 +46,9 @@ cp -rf %{SOURCE1} %{buildroot}/etc/httpd/conf.d/%{name}.conf
 %doc README.md
 
 %changelog
+* Tue Nov 15 2016 Alfredo Moralejo <amoralej@redhat.com> 1.0.5-1
+- Update to 1.0.5
+
 * Tue Oct 18 2016 Alfredo Moralejo <amoralej@redhat.com> 1.0.4-1
 - Update to 1.0.4
 

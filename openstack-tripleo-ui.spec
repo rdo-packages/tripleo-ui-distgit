@@ -1,7 +1,4 @@
 %global sname tripleo-ui
-%global commit 38664a13b4a74f9bcca3384f6ad4184a298db140
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-%global checkout .%{shortcommit}git
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 

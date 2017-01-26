@@ -1,5 +1,5 @@
-# UUID          Group Name
-False 	Non-Interactive Users
-c06451806a3089b6b65b94b27c7a1e54034da466       	openstack/tripleo-ui-distgit-core
-c2efd735c38c0ec10f4a25c8fd040816ecebce00        	openstack/tripleo-ui-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+c06451806a3089b6b65b94b27c7a1e54034da466	openstack/tripleo-ui-distgit-core
+c2efd735c38c0ec10f4a25c8fd040816ecebce00	openstack/tripleo-ui-distgit-ptl
+global:Registered-Users                 	Registered Users

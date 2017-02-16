@@ -23,7 +23,7 @@ BuildArch:      noarch
 %description
 
 %prep
-%autosetup -n %{name}-%{upstream_version} -S git
+%autosetup -n %{sname}-%{upstream_version} -S git
 
 %build
 rm -rf node_modules

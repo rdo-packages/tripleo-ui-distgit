@@ -1,6 +1,8 @@
 %global sname tripleo-ui
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{?dlrn: %global tarsources %{sname}-%{upstream_version}}
+%{!?dlrn: %global tarsources package}
 
 Name:           openstack-%{sname}
 Version:        XXX
@@ -20,7 +22,7 @@ BuildArch:      noarch
 %description
 
 %prep
-%autosetup -n %{sname}-%{upstream_version} -S git
+%autosetup -n %{tarsources} -S git
 
 %build
 rm -rf node_modules

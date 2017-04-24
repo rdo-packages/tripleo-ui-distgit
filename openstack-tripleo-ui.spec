@@ -49,3 +49,4 @@ cp -rf %{SOURCE1} %{buildroot}/etc/httpd/conf.d/%{name}.conf
 * Fri Feb 17 2017 Alfredo Moralejo <amoralej@redhat.com> 3.0.0-1
 - Update to 3.0.0
 
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/tripleo-ui/commit/?id=db08c696926276f38c9c0eb2698d0cbbe1b4c364

@@ -43,3 +43,4 @@ cp -rf %{SOURCE1} %{buildroot}/etc/httpd/conf.d/%{name}.conf
 %doc README.md
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/tripleo-ui/commit/?id=8bfde05d8b6064ab7b5c46352ff37d3a6ba34d5d

@@ -5,7 +5,7 @@
 %{!?dlrn: %global tarsources package}
 
 Name:           openstack-%{sname}
-Version:        7.4.1
+Version:        7.4.2
 Release:        1%{?dist}
 Summary:        TripleO UI --- GUI for the TripleO project
 License:        ASL 2.0
@@ -43,6 +43,9 @@ cp -rf %{SOURCE1} %{buildroot}/etc/httpd/conf.d/%{name}.conf
 %doc README.md
 
 %changelog
+* Tue Oct 10 2017 rdo-trunk <javier.pena@redhat.com> 7.4.2-1
+- Update to 7.4.2
+
 * Wed Oct 04 2017 rdo-trunk <javier.pena@redhat.com> 7.4.1-1
 - Update to 7.4.1
 

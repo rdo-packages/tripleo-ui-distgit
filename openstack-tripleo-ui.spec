@@ -10,7 +10,7 @@ Release:        XXX
 Summary:        TripleO UI --- GUI for the TripleO project
 License:        ASL 2.0
 URL:            http://tripleo.org
-# Source0 is created by running "npm pack"
+#  Source0 is created by running "npm pack"
 Source0:        http://tarballs.openstack.org/tripleo-ui/tripleo-ui-%{upstream_version}.tar.gz
 Source1:        tripleo-ui.conf
 

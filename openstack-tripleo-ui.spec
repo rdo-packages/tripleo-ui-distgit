@@ -16,7 +16,7 @@ Source1:        tripleo-ui.conf
 
 BuildRequires:  nodejs
 BuildRequires:  git
-BuildRequires:  %{name}-deps >= 7
+BuildRequires:  %{name}-deps >= 8
 BuildRequires:  /usr/bin/npm
 BuildArch:      noarch
 

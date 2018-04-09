@@ -1,0 +1,9 @@
+Code-Review+2: Alan Pevec <alan.pevec@redhat.com>
+Code-Review+2: Javier Peña <jpena@redhat.com>
+Verified+2: Alan Pevec <alan.pevec@redhat.com>
+Workflow+1: Alan Pevec <alan.pevec@redhat.com>
+Submitted-by: Alan Pevec <alan.pevec@redhat.com>
+Submitted-at: Mon, 09 Apr 2018 15:29:35 +0000
+Reviewed-on: https://review.rdoproject.org/r/13296
+Project: openstack/tripleo-ui-distgit
+Branch: refs/heads/rpm-master

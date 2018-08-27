@@ -5,8 +5,8 @@
 %{!?dlrn: %global tarsources package}
 
 Name:           openstack-%{sname}
-Version:        XXX
-Release:        XXX
+Version:        9.3.0
+Release:        1%{?dist}
 Summary:        TripleO UI --- GUI for the TripleO project
 License:        ASL 2.0
 URL:            http://tripleo.org
@@ -44,3 +44,6 @@ cp -rf %{SOURCE1} %{buildroot}/etc/httpd/conf.d/%{name}.conf
 %doc README.md
 
 %changelog
+* Mon Aug 27 2018 RDO <dev@lists.rdoproject.org> 9.3.0-1
+- Update to 9.3.0
+

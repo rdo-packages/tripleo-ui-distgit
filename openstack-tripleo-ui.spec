@@ -41,6 +41,6 @@ cp -rf %{SOURCE1} %{buildroot}/etc/httpd/conf.d/%{name}.conf
 %{_localstatedir}/www/%{name}
 %config(noreplace) %{_sysconfdir}/httpd/conf.d/%{name}.conf
 %license LICENSE
-%doc README.md
+%doc README.rst
 
 %changelog

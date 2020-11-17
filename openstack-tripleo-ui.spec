@@ -15,7 +15,7 @@ Source0:        http://tarballs.openstack.org/tripleo-ui/tripleo-ui-%{upstream_v
 Source1:        tripleo-ui.conf
 
 BuildRequires:  nodejs
-BuildRequires:  git
+BuildRequires:  git-core
 BuildRequires:  %{name}-deps >= 10
 BuildRequires:  /usr/bin/npm
 BuildArch:      noarch
